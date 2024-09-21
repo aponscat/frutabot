@@ -1,4 +1,4 @@
-# EasyBot
+# FrutaBot
 
 First set the variable TELEGRAM_TOKEN=xxx.yyy in your .env file
 
