@@ -28,8 +28,8 @@ php artisan test
 
 ## Resources
 
-<https://botman.io/>
-<https://github.com/orgs/botman/repositories?language=&type=all>
-<https://medium.com/@NomadNotes/botman-in-laravel-a-comprehensive-guide-9096ab4aa4a5>
-<https://medium.com/@prevailexcellent/how-to-build-a-telegram-bot-with-referral-system-with-laravel-11-and-botman-2-0-step-by-step-guide-0fc1e43aca65>
-<https://serhii.io/posts/telegram-bot-with-botman-and-latest-laravel-version>
+- <https://botman.io/>
+- <https://github.com/orgs/botman/repositories?language=&type=all>
+- <https://medium.com/@NomadNotes/botman-in-laravel-a-comprehensive-guide-9096ab4aa4a5>
+- <https://medium.com/@prevailexcellent/how-to-build-a-telegram-bot-with-referral-system-with-laravel-11-and-botman-2-0-step-by-step-guide-0fc1e43aca65>
+- <https://serhii.io/posts/telegram-bot-with-botman-and-latest-laravel-version>
