@@ -1,4 +1,5 @@
 frutabot:
+  build: .
   services:
     php:
       image: dunglas/frankenphp
