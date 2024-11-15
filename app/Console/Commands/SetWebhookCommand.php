@@ -12,7 +12,7 @@ class SetWebhookCommand extends Command {
     public function handle() {
         $url=config('app.url').'/bot';
         $token = config('botman.telegram_token');
-        $response = Http::post("https://api.telegram.org/bot$token/setWebhook", $url);
+        $response = Http::post("https://api.telegram.org/bot$token/setWebhook", compact('url'));
         $this->info($response->json('description', 'Unknown error'));
     }
 }
