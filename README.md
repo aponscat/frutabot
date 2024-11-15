@@ -4,6 +4,8 @@ First set the variable TELEGRAM_TOKEN=xxx.yyy in your .env file
 
 Create a Telegram bot using the following commands:
 
+## Ngrok
+
 Is better to start the first two commands in separate windows to control the daemons
 
 ```sh
@@ -12,8 +14,16 @@ php artisan serve
 # Connect ngrok public url to laravel
 ngrok http http://localhost:8000
 # Connect Telegram to the public url of ngrok (that connects to local environment)
-php artisan bot:set-webhook
+php artisan bot:set-webhook-ngrok
 ```
+
+## Direct connection
+```sh
+# Connect Telegram to the public url of ngrok (that connects to local environment)
+php artisan bot:set-webhook https://xxx.yy.com
+```
+
+
 
 You can inspect the ngrok traffic using this url:
 <http://localhost:4040/inspect/http>
