@@ -1,4 +1,4 @@
-+ services:
+services:
   php:
     image: dunglas/frankenphp
     restart: always
