@@ -11,7 +11,7 @@ services:
     volumes:
       - caddy_data:/data
       - caddy_config:/config
-      - app:/app
+      - .:/app
     restart: always
 
 # Volumes needed for Caddy certificates and configuration
