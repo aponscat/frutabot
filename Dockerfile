@@ -8,4 +8,4 @@ RUN install-php-extensions pcntl
  
 COPY . /app
  
-ENTRYPOINT ["php", "artisan", "octane:frankenphp"]
+ENTRYPOINT ["php", "artisan", "octane:start", "--host=aponscat.com", "--port=443", "--https", "--http-redirect", "--admin-port=55555"]
