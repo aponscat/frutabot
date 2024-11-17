@@ -3,7 +3,7 @@ FROM dunglas/frankenphp:1-php8.2-bookworm
 # Production:
 RUN cp $PHP_INI_DIR/php.ini-production $PHP_INI_DIR/php.ini
  
-RUN install-php-extensions pcntl mysql curl gd intl zip xml mbstring opcache bcmath memcached apcu exif sqlite
+RUN install-php-extensions pcntl curl gd intl zip xml mbstring opcache bcmath memcached apcu exif sqlite
  
 COPY . /app
  
