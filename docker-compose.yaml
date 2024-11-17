@@ -1,7 +1,10 @@
 services:
   php:
-    image: dunglas/frankenphp
+    image: dunglas/frankenphp:1-php8.2-bookworm
     restart: always
+    environment:
+      - APP_ENV=development
+      - APP_DEBUG=true
     ports:
       - "80:80" # HTTP
       - "443:443" # HTTPS
