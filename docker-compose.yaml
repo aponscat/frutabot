@@ -1,4 +1,6 @@
 services:
+  app:
+    build: .
   php:
     image: dunglas/frankenphp:1-php8.2-bookworm
     restart: always
