@@ -1,7 +1,6 @@
 FROM dunglas/frankenphp:1-php8.2-bookworm
 
 # Production:
-ENV SERVER_NAME=aponscat.com
 RUN cp $PHP_INI_DIR/php.ini-production $PHP_INI_DIR/php.ini
 
 RUN install-php-extensions pcntl 

@@ -4,7 +4,8 @@ services:
     environment:
       - APP_ENV=development
       - APP_DEBUG=true
-      - APP_URL:https://aponscat.com
+      - APP_URL=https://aponscat.com
+      - SERVER_NAME=aponscat.com
     ports:
       - "80:80" # HTTP
       - "443:443" # HTTPS
