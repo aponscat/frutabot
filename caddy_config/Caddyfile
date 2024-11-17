@@ -1,0 +1,10 @@
+{
+	frankenphp {
+		worker /app/public/index.php 5
+	}
+}
+
+aponscat.com {
+	root * /app/public
+	php_server
+}
