@@ -1,9 +1,6 @@
 services:
-  app:
-    build: .
   php:
-    image: dunglas/frankenphp:1-php8.2-bookworm
-    restart: always
+    build: .
     environment:
       - APP_ENV=development
       - APP_DEBUG=true
@@ -14,8 +11,11 @@ services:
     volumes:
       - caddy_data:/data
       - caddy_config:/config
+      - app:/app
+    restart: always
 
 # Volumes needed for Caddy certificates and configuration
 volumes:
   caddy_data:
   caddy_config:
+  app:
