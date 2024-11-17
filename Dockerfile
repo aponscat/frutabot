@@ -7,5 +7,6 @@ RUN install-php-extensions pcntl
 #gd intl zip opcache bcmath memcached apcu exif sqlite
  
 COPY . /app
+WORKDIR /app
  
-ENTRYPOINT ["php", "artisan", "octane:start", "--host=aponscat.com", "--port=443", "--https", "--http-redirect", "--admin-port=55555"]
+ENTRYPOINT ["./start.sh"]
